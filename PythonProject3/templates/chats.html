@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Чаты</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="navbar">
+  <a href="{{ url_for('profile') }}">👤 Профиль</a>
+  <a href="{{ url_for('logout') }}">🚪 Выйти</a>
+</div>
+
+<div class="container">
+  <h2>Выберите чат</h2>
+  <a href="/chat/family">👨‍👩‍👧‍👦 Family Chat</a><br><br>
+  <a href="/chat/friends">💬 Friends Chat</a><br><br>
+  <a href="/chat/random">🌐 Random Chat</a>
+</div>
+</body>
+</html>
